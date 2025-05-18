@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Titillium+Web:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+/* {
+    font-family: 'Titillium Web', sans-serif;
+     font-family: "Kaisei Decol", serif;
+}	
+*/
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+    .header-content{
+        position: absolute;
+      
+        background-color: #09090968;
+        color: #fff;
+        
+        width: 60%;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;    
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1; 
+    }
+
+        .header-icon{
+            width: 10em;
+            border-radius: 50%;
+        }
+
+        .header-content__text > h1{
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 20px;
+    }
+
+        .header-content__text > p{
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 1.5em;
+            font-weight: 500;
+            color: #fff;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        
+
+        .header-content__text > button {
+            background-color: #a00000;
+            color: #fff;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            text-align: center;
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 5px;
+            letter-spacing: 1px;
+
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            transition-duration: .5s;
+        }
+            .header-content__text > button > img{
+                width: 1.5em;
+                height: 1.5em;
+                margin-right: 10px;
+            }
+
+        .header-content__text button:hover{
+            background-color: #fff;
+            color: #000;
+            transition-duration: .5s;
+        }
+
+
+
+    .header-overlay{
+        height: 100vh;
+        width: 100%;
+        background-image: url("/Imagenes/Overlay.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;   
+        background-position: top;
+    }
+
+    .header-navbar{
+        display: flex;
+        justify-content: space-between;
+        background-color: #000000da;
+        padding: 10px;
+    }
+
+        .header-navbar__icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .navbar-icon{
+                width: 3em;
+                height: 3em;
+            }
+
+            .navbar-title{
+                display: inline-block;
+                font-family: 'Titillium Web', sans-serif;
+                font-weight: bold;
+                font-size: 2em;
+                color: #fff;
+                
+                margin-left: 15px;
+            }
+
+                .navbar-title > span{
+                    color: rgb(255, 0, 0);
+                }
+
+        .header-navbar__nav{
+            display: flex;
+        }
+
+            .nav-ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                list-style: none;
+            }
+                .nav-ul > li{
+                    font-size: 1.2em;
+                    font-family: 'Titillium Web', sans-serif;
+                    font-weight: 200;
+
+                    padding: 10px 20px;
+                    margin: 0 20px;
+                }
+
+                    .sobre-nosotros {
+                        color: rgb(255, 0, 0);
+                    }
+
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    background-color: #000;
+}   
+    .menu-title{
+        font-size: 4em;
+        font-family: 'Titillium Web', sans-serif;
+        color: #fff;
+        padding: 10px 20px;
+        background-color: #070707;
+
+        text-align: center;
+    }
+
+    .menu-subtitle{
+        font-size: 2em;
+        font-family: 'Titillium Web', sans-serif;
+        color: #fff;
+        padding: 10px 20px;
+        background-color: #1b1b1b;
+
+        text-align: center;
+    }
+
+    .menu-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+
+        position: relative;
+        top: 0;
+        left: 0;
+
+        background-color: #000000;
+    }
+
+        .menu-item{
+            height: 360px;
+            width: 360px;
+            flex-grow: 1;
+            flex-basis: 20%;
+            justify-content: center;
+
+            max-width: 300px;
+            
+            overflow: hidden;
+            
+        }
+            .menu-item__img{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                cursor: pointer;
+
+                object-fit: cover;
+                object-position: top;
+          
+            }
+
+        .menu-item-P{
+            height: 400px;
+            flex-grow: 1;
+            max-width: 300px;
+
+            overflow: hidden;
+
+            position: relative;
+            left: 0;
+            top: 0;
+
+            transition-duration: .5s;
+        }
+
+            .menu-item-P:hover{
+                max-width: 350px;
+                height: 450px;
+                transition-duration: 1s;
+        }
+
+            .menu-item__img-P{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;  
+        
+            }
+                .menu-item__img-P:hover{
+                    width: 100%;
+                }
+
+.whiteText{
+    text-align: center;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2rem;
+    display: block;
+}
+
+.card{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.text-card{
+    font-size: 0.8em;
+}
+
+.span-card{
+    font-size: 0.55em;
+    display: block;
+    margin-bottom: 10px;
+}
+

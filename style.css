@@ -109,7 +109,7 @@
     .header-overlay{
         height: 100vh;
         width: 100%;
-        background-image: url("https://NeoZunder.github.io/SushiMeshiPage/Imagenes/Overlay.jpg");
+        background-image: url("/Imagenes/Overlay.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -205,7 +205,7 @@
     .menu-container{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
         
@@ -217,33 +217,15 @@
         background-color: #000000;
     }
 
-        .menu-item{
-            height: 360px;
-            width: 360px;
-            flex-grow: 1;
-            flex-basis: 20%;
-            justify-content: center;
-
-            max-width: 300px;
-            
-            overflow: hidden;
-            
-        }
-            .menu-item__img{
-                width: 100%;
-                height: 100%;
-                position: relative;
-                cursor: pointer;
-
-                object-fit: cover;
-                object-position: top;
-          
-            }
-
         .menu-item-P{
-            height: 400px;
-            flex-grow: 1;
-            max-width: 300px;
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+
+            width: 350px;
+            height: 425px;
+            
+            margin: 0px 1px;        
 
             overflow: hidden;
 
@@ -251,22 +233,24 @@
             left: 0;
             top: 0;
 
-            transition-duration: .5s;
+            transition-duration: 1s;
         }
 
             .menu-item-P:hover{
                 max-width: 350px;
                 height: 450px;
                 transition-duration: 1s;
-        }
+            }
 
             .menu-item__img-P{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: top;  
-        
+                overflow: visible;
+
             }
+
                 .menu-item__img-P:hover{
                     width: 100%;
                 }
@@ -279,12 +263,32 @@
     display: block;
 }
 
+
 .card{
     background-color: #000;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    justify-content: space-around;
+
 }
+
+    .card-item{
+        width: 400px;   
+        background-color: #070707;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+        .card-item p{
+            font-size: 1em;
+        }
+
+        .card-item img{
+            width: 100%;
+        }
+
 .text-card{
     font-size: 0.8em;
 }
@@ -294,4 +298,216 @@
     display: block;
     margin-bottom: 10px;
 }
+
+@media (min-width: 319px) and (max-width: 425px) {
+
+    .header-navbar__nav{
+        display: none;
+    }
+    .header-content{
+        position: absolute;
+      
+        background-color: #09090968;
+        color: #fff;
+        
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;    
+        
+    }
+
+        .header-icon{
+            width: 6em;
+            border-radius: 50%;
+        }
+
+        .nav-bar-title{
+            font-size: 1.5em;
+        }
+
+        .header-content__text > h1{
+            font-size: 2em;
+    }
+
+        .header-content__text > p{
+            font-size: 1.4em;
+        }
+
+
+    .header-navbar{
+        display: flex;
+        justify-content: space-between;
+        background-color: #000000da;
+
+        font-size: 1em;
+    }
+
+        .header-navbar__icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .navbar-icon{
+                width: 1.5em;
+                height: 1.5em;
+            }
+
+            .navbar-title{
+                font-size: 1em;
+            }
+
+
+                .nav-ul > li{
+                    font-size: .55em;
+                }
+
+    .menu-title{
+        font-size: 2em;
+    }
+
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+        .menu-item-P{
+            width: 100%;
+            height: 90px;
+        }
+
+        .menu-item-P:hover{
+                max-width: 80%;
+                height: 450px;
+                }
+                
+            .menu-item__img-P{
+                width: 80%;
+            }
+        
+}
+
+@media (min-width: 425px) and (max-width: 725px) {
+
+
+    .header-content{
+        position: absolute;
+      
+        background-color: #09090968;
+        color: #fff;
+        
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;    
+        
+    }
+
+        .header-icon{
+            width: 5em;
+            border-radius: 50%;
+        }
+
+        .nav-bar-title{
+            font-size: 1.5em;
+        }
+
+        .header-content__text > h1{
+            font-size: 2em;
+    }
+
+        .header-content__text > p{
+            font-size: 1.4em;
+        }
+
+
+    .header-navbar{
+        display: flex;
+        justify-content:center;
+        background-color: #000000da;
+
+        font-size: 1em;
+    }
+
+        .header-navbar__icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .navbar-icon{
+                width: 2em;
+                height: 2em;
+            }
+
+            .navbar-title{
+                font-size: 1em;
+            }
+
+                .nav-ul > li{
+                    font-size: .55em;
+                }
+
+    .menu-title{
+        font-size: 2.5em;
+    }
+
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+
+        .menu-item-P{
+            width: 100%;
+            height: 110px;          
+        }
+
+        .menu-item-P:hover{
+                max-width: 80%;
+                height: 650px;
+                }
+                
+            .menu-item__img-P{
+                width: 80%;
+            }
+}  
+
+@media (min-width: 725px) and (max-width: 1024px) {
+    .menu-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+
+       
+        
+    }
+
+        .menu-item-P{
+                width: 30%;
+                margin: 1px;
+        }
+
+        .menu-item-P:hover{
+                
+                }
+                
+            .menu-item__img-P{
+                width: 256px;        
+            }
+
+            .menu-item__img-P:hover{
+                position: absolute;
+                max-width: 356px; 
+            }
+}
+
+
+
+
+
 

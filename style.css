@@ -109,7 +109,7 @@
     .header-overlay{
         height: 100vh;
         width: 100%;
-        background-image: url("https://github.com/NeoZunder/SushiMeshiPage/blob/main/Imagenes/Overlay.jpg");
+        background-image: url("https://raw.githubusercontent.com/NeoZunder/SushiMeshiPage/refs/heads/main/Imagenes/Overlay.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
